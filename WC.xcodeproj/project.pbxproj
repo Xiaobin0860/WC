@@ -662,6 +662,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UF5W33258N;
 				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = WC/Info.plist;
 				MONKEYDEV_CLASS_DUMP = NO;
 				MONKEYDEV_RESTORE_SYMBOL = NO;
@@ -670,6 +671,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.xin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
 			};
 			name = Debug;
 		};
@@ -679,6 +681,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UF5W33258N;
 				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				INFOPLIST_FILE = WC/Info.plist;
 				MONKEYDEV_CLASS_DUMP = NO;
 				MONKEYDEV_RESTORE_SYMBOL = NO;
@@ -687,6 +690,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.xin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
 			};
 			name = Release;
 		};
