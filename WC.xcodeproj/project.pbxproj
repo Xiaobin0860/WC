@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		524100121FEEB0D100ACC004 /* WBRedEnvelopConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 524100011FEEB0CF00ACC004 /* WBRedEnvelopConfig.m */; };
+		524100131FEEB0D100ACC004 /* WBSettingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 524100021FEEB0CF00ACC004 /* WBSettingViewController.h */; };
+		524100141FEEB0D100ACC004 /* WBSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524100031FEEB0CF00ACC004 /* WBSettingViewController.m */; };
+		524100151FEEB0D100ACC004 /* WeChatRedEnvelop.h in Headers */ = {isa = PBXBuildFile; fileRef = 524100041FEEB0CF00ACC004 /* WeChatRedEnvelop.h */; };
+		524100161FEEB0D100ACC004 /* WeChatRedEnvelopParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 524100051FEEB0CF00ACC004 /* WeChatRedEnvelopParam.m */; };
+		524100171FEEB0D100ACC004 /* WBMultiSelectGroupsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 524100061FEEB0CF00ACC004 /* WBMultiSelectGroupsViewController.h */; };
+		524100181FEEB0D100ACC004 /* WBRedEnvelopConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 524100071FEEB0CF00ACC004 /* WBRedEnvelopConfig.h */; };
+		524100191FEEB0D100ACC004 /* WBRedEnvelopTaskManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 524100081FEEB0CF00ACC004 /* WBRedEnvelopTaskManager.h */; };
+		5241001A1FEEB0D100ACC004 /* WBMultiSelectGroupsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524100091FEEB0D000ACC004 /* WBMultiSelectGroupsViewController.m */; };
+		5241001B1FEEB0D100ACC004 /* WBReceiveRedEnvelopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5241000A1FEEB0D000ACC004 /* WBReceiveRedEnvelopOperation.m */; };
+		5241001C1FEEB0D100ACC004 /* WBRedEnvelopParamQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5241000B1FEEB0D000ACC004 /* WBRedEnvelopParamQueue.h */; };
+		5241001D1FEEB0D100ACC004 /* WeChatRedEnvelopParam.h in Headers */ = {isa = PBXBuildFile; fileRef = 5241000C1FEEB0D000ACC004 /* WeChatRedEnvelopParam.h */; };
+		5241001E1FEEB0D100ACC004 /* WBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5241000D1FEEB0D000ACC004 /* WBBaseViewController.m */; };
+		5241001F1FEEB0D100ACC004 /* WBBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5241000E1FEEB0D000ACC004 /* WBBaseViewController.h */; };
+		524100201FEEB0D100ACC004 /* WBReceiveRedEnvelopOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5241000F1FEEB0D000ACC004 /* WBReceiveRedEnvelopOperation.h */; };
+		524100211FEEB0D100ACC004 /* WBRedEnvelopParamQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 524100101FEEB0D000ACC004 /* WBRedEnvelopParamQueue.m */; };
+		524100221FEEB0D100ACC004 /* WBRedEnvelopTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 524100111FEEB0D000ACC004 /* WBRedEnvelopTaskManager.m */; };
+		5241FFC41FEEABA000ACC004 /* MethodTraceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5241FFC31FEEABA000ACC004 /* MethodTraceConfig.plist */; };
+		5241FFC71FEEABA000ACC004 /* put ipa or app here in Resources */ = {isa = PBXBuildFile; fileRef = 5241FFC61FEEABA000ACC004 /* put ipa or app here */; };
+		5241FFCF1FEEABA000ACC004 /* libWCDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5241FFCE1FEEABA000ACC004 /* libWCDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5241FFD61FEEABA000ACC004 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5241FFD51FEEABA000ACC004 /* JavaScriptCore.framework */; };
+		5241FFDA1FEEABA000ACC004 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5241FFD91FEEABA000ACC004 /* Foundation.framework */; };
+		5241FFDC1FEEABA000ACC004 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5241FFDB1FEEABA000ACC004 /* UIKit.framework */; };
+		5241FFE01FEEABA000ACC004 /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 5241FFDF1FEEABA000ACC004 /* ANYMethodLog.h */; };
+		5241FFE21FEEABA000ACC004 /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5241FFE11FEEABA000ACC004 /* ANYMethodLog.m */; };
+		5241FFE41FEEABA100ACC004 /* MethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 5241FFE31FEEABA100ACC004 /* MethodTrace.h */; };
+		5241FFE61FEEABA100ACC004 /* MethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 5241FFE51FEEABA100ACC004 /* MethodTrace.m */; };
+		5241FFEB1FEEABA100ACC004 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 5241FFEA1FEEABA100ACC004 /* AntiAntiDebug.m */; };
+		5241FFEE1FEEABA100ACC004 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 5241FFED1FEEABA100ACC004 /* fishhook.c */; };
+		5241FFF01FEEABA100ACC004 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 5241FFEF1FEEABA100ACC004 /* fishhook.h */; };
+		5241FFF31FEEABA100ACC004 /* WCDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5241FFF21FEEABA100ACC004 /* WCDylib.mm */; };
+		5241FFF51FEEABA100ACC004 /* WCDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 5241FFF41FEEABA100ACC004 /* WCDylib.h */; };
+		5241FFF71FEEABA100ACC004 /* WCDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 5241FFF61FEEABA100ACC004 /* WCDylib.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5241FFD01FEEABA000ACC004 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5241FFB51FEEABA000ACC004 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5241FFCD1FEEABA000ACC004;
+			remoteInfo = WCDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5241FFBD1FEEABA000ACC004 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5241FFCF1FEEABA000ACC004 /* libWCDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		524100011FEEB0CF00ACC004 /* WBRedEnvelopConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBRedEnvelopConfig.m; path = ../../WeChatRedEnvelop/src/WBRedEnvelopConfig.m; sourceTree = "<group>"; };
+		524100021FEEB0CF00ACC004 /* WBSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBSettingViewController.h; path = ../../WeChatRedEnvelop/src/WBSettingViewController.h; sourceTree = "<group>"; };
+		524100031FEEB0CF00ACC004 /* WBSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBSettingViewController.m; path = ../../WeChatRedEnvelop/src/WBSettingViewController.m; sourceTree = "<group>"; };
+		524100041FEEB0CF00ACC004 /* WeChatRedEnvelop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeChatRedEnvelop.h; path = ../../WeChatRedEnvelop/src/WeChatRedEnvelop.h; sourceTree = "<group>"; };
+		524100051FEEB0CF00ACC004 /* WeChatRedEnvelopParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeChatRedEnvelopParam.m; path = ../../WeChatRedEnvelop/src/WeChatRedEnvelopParam.m; sourceTree = "<group>"; };
+		524100061FEEB0CF00ACC004 /* WBMultiSelectGroupsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBMultiSelectGroupsViewController.h; path = ../../WeChatRedEnvelop/src/WBMultiSelectGroupsViewController.h; sourceTree = "<group>"; };
+		524100071FEEB0CF00ACC004 /* WBRedEnvelopConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBRedEnvelopConfig.h; path = ../../WeChatRedEnvelop/src/WBRedEnvelopConfig.h; sourceTree = "<group>"; };
+		524100081FEEB0CF00ACC004 /* WBRedEnvelopTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBRedEnvelopTaskManager.h; path = ../../WeChatRedEnvelop/src/WBRedEnvelopTaskManager.h; sourceTree = "<group>"; };
+		524100091FEEB0D000ACC004 /* WBMultiSelectGroupsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBMultiSelectGroupsViewController.m; path = ../../WeChatRedEnvelop/src/WBMultiSelectGroupsViewController.m; sourceTree = "<group>"; };
+		5241000A1FEEB0D000ACC004 /* WBReceiveRedEnvelopOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBReceiveRedEnvelopOperation.m; path = ../../WeChatRedEnvelop/src/WBReceiveRedEnvelopOperation.m; sourceTree = "<group>"; };
+		5241000B1FEEB0D000ACC004 /* WBRedEnvelopParamQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBRedEnvelopParamQueue.h; path = ../../WeChatRedEnvelop/src/WBRedEnvelopParamQueue.h; sourceTree = "<group>"; };
+		5241000C1FEEB0D000ACC004 /* WeChatRedEnvelopParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeChatRedEnvelopParam.h; path = ../../WeChatRedEnvelop/src/WeChatRedEnvelopParam.h; sourceTree = "<group>"; };
+		5241000D1FEEB0D000ACC004 /* WBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBBaseViewController.m; path = ../../WeChatRedEnvelop/src/WBBaseViewController.m; sourceTree = "<group>"; };
+		5241000E1FEEB0D000ACC004 /* WBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBBaseViewController.h; path = ../../WeChatRedEnvelop/src/WBBaseViewController.h; sourceTree = "<group>"; };
+		5241000F1FEEB0D000ACC004 /* WBReceiveRedEnvelopOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBReceiveRedEnvelopOperation.h; path = ../../WeChatRedEnvelop/src/WBReceiveRedEnvelopOperation.h; sourceTree = "<group>"; };
+		524100101FEEB0D000ACC004 /* WBRedEnvelopParamQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBRedEnvelopParamQueue.m; path = ../../WeChatRedEnvelop/src/WBRedEnvelopParamQueue.m; sourceTree = "<group>"; };
+		524100111FEEB0D000ACC004 /* WBRedEnvelopTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBRedEnvelopTaskManager.m; path = ../../WeChatRedEnvelop/src/WBRedEnvelopTaskManager.m; sourceTree = "<group>"; };
+		5241FFC01FEEABA000ACC004 /* WC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5241FFC31FEEABA000ACC004 /* MethodTraceConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MethodTraceConfig.plist; sourceTree = "<group>"; };
+		5241FFC61FEEABA000ACC004 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		5241FFC81FEEABA000ACC004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5241FFCE1FEEABA000ACC004 /* libWCDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libWCDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		5241FFD51FEEABA000ACC004 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		5241FFD91FEEABA000ACC004 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5241FFDB1FEEABA000ACC004 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5241FFDF1FEEABA000ACC004 /* ANYMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ANYMethodLog.h; path = MethodTrace/ANYMethodLog.h; sourceTree = "<group>"; };
+		5241FFE11FEEABA000ACC004 /* ANYMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ANYMethodLog.m; path = MethodTrace/ANYMethodLog.m; sourceTree = "<group>"; };
+		5241FFE31FEEABA100ACC004 /* MethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MethodTrace.h; path = MethodTrace/MethodTrace.h; sourceTree = "<group>"; };
+		5241FFE51FEEABA100ACC004 /* MethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MethodTrace.m; path = MethodTrace/MethodTrace.m; sourceTree = "<group>"; };
+		5241FFE81FEEABA100ACC004 /* WCDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WCDylib-Prefix.pch"; sourceTree = "<group>"; };
+		5241FFEA1FEEABA100ACC004 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		5241FFED1FEEABA100ACC004 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		5241FFEF1FEEABA100ACC004 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		5241FFF11FEEABA100ACC004 /* WCDylib.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = WCDylib.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		5241FFF21FEEABA100ACC004 /* WCDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WCDylib.mm; sourceTree = "<group>"; };
+		5241FFF41FEEABA100ACC004 /* WCDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCDylib.h; sourceTree = "<group>"; };
+		5241FFF61FEEABA100ACC004 /* WCDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCDylib.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5241FFBA1FEEABA000ACC004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5241FFCB1FEEABA000ACC004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5241FFD61FEEABA000ACC004 /* JavaScriptCore.framework in Frameworks */,
+				5241FFDA1FEEABA000ACC004 /* Foundation.framework in Frameworks */,
+				5241FFDC1FEEABA000ACC004 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		524100001FEEB0BB00ACC004 /* hookwx */ = {
+			isa = PBXGroup;
+			children = (
+				5241000E1FEEB0D000ACC004 /* WBBaseViewController.h */,
+				5241000D1FEEB0D000ACC004 /* WBBaseViewController.m */,
+				524100061FEEB0CF00ACC004 /* WBMultiSelectGroupsViewController.h */,
+				524100091FEEB0D000ACC004 /* WBMultiSelectGroupsViewController.m */,
+				5241000F1FEEB0D000ACC004 /* WBReceiveRedEnvelopOperation.h */,
+				5241000A1FEEB0D000ACC004 /* WBReceiveRedEnvelopOperation.m */,
+				524100071FEEB0CF00ACC004 /* WBRedEnvelopConfig.h */,
+				524100011FEEB0CF00ACC004 /* WBRedEnvelopConfig.m */,
+				5241000B1FEEB0D000ACC004 /* WBRedEnvelopParamQueue.h */,
+				524100101FEEB0D000ACC004 /* WBRedEnvelopParamQueue.m */,
+				524100081FEEB0CF00ACC004 /* WBRedEnvelopTaskManager.h */,
+				524100111FEEB0D000ACC004 /* WBRedEnvelopTaskManager.m */,
+				524100021FEEB0CF00ACC004 /* WBSettingViewController.h */,
+				524100031FEEB0CF00ACC004 /* WBSettingViewController.m */,
+				524100041FEEB0CF00ACC004 /* WeChatRedEnvelop.h */,
+				5241000C1FEEB0D000ACC004 /* WeChatRedEnvelopParam.h */,
+				524100051FEEB0CF00ACC004 /* WeChatRedEnvelopParam.m */,
+			);
+			name = hookwx;
+			sourceTree = "<group>";
+		};
+		5241FFB41FEEABA000ACC004 = {
+			isa = PBXGroup;
+			children = (
+				5241FFC21FEEABA000ACC004 /* WC */,
+				5241FFDD1FEEABA000ACC004 /* WCDylib */,
+				5241FFD21FEEABA000ACC004 /* Frameworks */,
+				5241FFC11FEEABA000ACC004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5241FFC11FEEABA000ACC004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5241FFC01FEEABA000ACC004 /* WC.app */,
+				5241FFCE1FEEABA000ACC004 /* libWCDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5241FFC21FEEABA000ACC004 /* WC */ = {
+			isa = PBXGroup;
+			children = (
+				5241FFC31FEEABA000ACC004 /* MethodTraceConfig.plist */,
+				5241FFC81FEEABA000ACC004 /* Info.plist */,
+				5241FFC51FEEABA000ACC004 /* TargetApp */,
+			);
+			path = WC;
+			sourceTree = "<group>";
+		};
+		5241FFC51FEEABA000ACC004 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				5241FFC61FEEABA000ACC004 /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		5241FFD21FEEABA000ACC004 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5241FFD51FEEABA000ACC004 /* JavaScriptCore.framework */,
+				5241FFD91FEEABA000ACC004 /* Foundation.framework */,
+				5241FFDB1FEEABA000ACC004 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5241FFDD1FEEABA000ACC004 /* WCDylib */ = {
+			isa = PBXGroup;
+			children = (
+				524100001FEEB0BB00ACC004 /* hookwx */,
+				5241FFF11FEEABA100ACC004 /* WCDylib.xm */,
+				5241FFF21FEEABA100ACC004 /* WCDylib.mm */,
+				5241FFF41FEEABA100ACC004 /* WCDylib.h */,
+				5241FFF61FEEABA100ACC004 /* WCDylib.m */,
+				5241FFDE1FEEABA000ACC004 /* MethodTrace */,
+				5241FFE91FEEABA100ACC004 /* AntiAntiDebug */,
+				5241FFEC1FEEABA100ACC004 /* fishhook */,
+				5241FFE71FEEABA100ACC004 /* Supporting Files */,
+			);
+			path = WCDylib;
+			sourceTree = "<group>";
+		};
+		5241FFDE1FEEABA000ACC004 /* MethodTrace */ = {
+			isa = PBXGroup;
+			children = (
+				5241FFDF1FEEABA000ACC004 /* ANYMethodLog.h */,
+				5241FFE11FEEABA000ACC004 /* ANYMethodLog.m */,
+				5241FFE31FEEABA100ACC004 /* MethodTrace.h */,
+				5241FFE51FEEABA100ACC004 /* MethodTrace.m */,
+			);
+			name = MethodTrace;
+			sourceTree = "<group>";
+		};
+		5241FFE71FEEABA100ACC004 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5241FFE81FEEABA100ACC004 /* WCDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5241FFE91FEEABA100ACC004 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				5241FFEA1FEEABA100ACC004 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		5241FFEC1FEEABA100ACC004 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				5241FFED1FEEABA100ACC004 /* fishhook.c */,
+				5241FFEF1FEEABA100ACC004 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5241FFCC1FEEABA000ACC004 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				524100151FEEB0D100ACC004 /* WeChatRedEnvelop.h in Headers */,
+				5241FFE01FEEABA000ACC004 /* ANYMethodLog.h in Headers */,
+				5241001D1FEEB0D100ACC004 /* WeChatRedEnvelopParam.h in Headers */,
+				524100131FEEB0D100ACC004 /* WBSettingViewController.h in Headers */,
+				5241FFF51FEEABA100ACC004 /* WCDylib.h in Headers */,
+				524100171FEEB0D100ACC004 /* WBMultiSelectGroupsViewController.h in Headers */,
+				5241001C1FEEB0D100ACC004 /* WBRedEnvelopParamQueue.h in Headers */,
+				5241001F1FEEB0D100ACC004 /* WBBaseViewController.h in Headers */,
+				524100181FEEB0D100ACC004 /* WBRedEnvelopConfig.h in Headers */,
+				5241FFE41FEEABA100ACC004 /* MethodTrace.h in Headers */,
+				524100201FEEB0D100ACC004 /* WBReceiveRedEnvelopOperation.h in Headers */,
+				5241FFF01FEEABA100ACC004 /* fishhook.h in Headers */,
+				524100191FEEB0D100ACC004 /* WBRedEnvelopTaskManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5241FFBF1FEEABA000ACC004 /* WC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5241FFFD1FEEABA100ACC004 /* Build configuration list for PBXNativeTarget "WC" */;
+			buildPhases = (
+				5241FFB91FEEABA000ACC004 /* Sources */,
+				5241FFBA1FEEABA000ACC004 /* Frameworks */,
+				5241FFBB1FEEABA000ACC004 /* ShellScript */,
+				5241FFBC1FEEABA000ACC004 /* Resources */,
+				5241FFBD1FEEABA000ACC004 /* CopyFiles */,
+				5241FFBE1FEEABA000ACC004 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5241FFD11FEEABA000ACC004 /* PBXTargetDependency */,
+			);
+			name = WC;
+			productName = WC;
+			productReference = 5241FFC01FEEABA000ACC004 /* WC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5241FFCD1FEEABA000ACC004 /* WCDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5241FFFA1FEEABA100ACC004 /* Build configuration list for PBXNativeTarget "WCDylib" */;
+			buildPhases = (
+				5241FFC91FEEABA000ACC004 /* ShellScript */,
+				5241FFCA1FEEABA000ACC004 /* Sources */,
+				5241FFCB1FEEABA000ACC004 /* Frameworks */,
+				5241FFCC1FEEABA000ACC004 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WCDylib;
+			productName = WCDylib;
+			productReference = 5241FFCE1FEEABA000ACC004 /* libWCDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5241FFB51FEEABA000ACC004 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Xiaobin Li";
+				TargetAttributes = {
+					5241FFBF1FEEABA000ACC004 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					5241FFCD1FEEABA000ACC004 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5241FFB81FEEABA000ACC004 /* Build configuration list for PBXProject "WC" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5241FFB41FEEABA000ACC004;
+			productRefGroup = 5241FFC11FEEABA000ACC004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5241FFBF1FEEABA000ACC004 /* WC */,
+				5241FFCD1FEEABA000ACC004 /* WCDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5241FFBC1FEEABA000ACC004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5241FFC71FEEABA000ACC004 /* put ipa or app here in Resources */,
+				5241FFC41FEEABA000ACC004 /* MethodTraceConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5241FFBB1FEEABA000ACC004 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		5241FFBE1FEEABA000ACC004 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		5241FFC91FEEABA000ACC004 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5241FFB91FEEABA000ACC004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5241FFCA1FEEABA000ACC004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5241FFF31FEEABA100ACC004 /* WCDylib.mm in Sources */,
+				5241FFEB1FEEABA100ACC004 /* AntiAntiDebug.m in Sources */,
+				524100141FEEB0D100ACC004 /* WBSettingViewController.m in Sources */,
+				5241001B1FEEB0D100ACC004 /* WBReceiveRedEnvelopOperation.m in Sources */,
+				524100121FEEB0D100ACC004 /* WBRedEnvelopConfig.m in Sources */,
+				524100161FEEB0D100ACC004 /* WeChatRedEnvelopParam.m in Sources */,
+				5241FFE61FEEABA100ACC004 /* MethodTrace.m in Sources */,
+				5241FFEE1FEEABA100ACC004 /* fishhook.c in Sources */,
+				524100211FEEB0D100ACC004 /* WBRedEnvelopParamQueue.m in Sources */,
+				5241001E1FEEB0D100ACC004 /* WBBaseViewController.m in Sources */,
+				5241001A1FEEB0D100ACC004 /* WBMultiSelectGroupsViewController.m in Sources */,
+				5241FFF71FEEABA100ACC004 /* WCDylib.m in Sources */,
+				5241FFE21FEEABA000ACC004 /* ANYMethodLog.m in Sources */,
+				524100221FEEB0D100ACC004 /* WBRedEnvelopTaskManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5241FFD11FEEABA000ACC004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5241FFCD1FEEABA000ACC004 /* WCDylib */;
+			targetProxy = 5241FFD01FEEABA000ACC004 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5241FFF81FEEABA100ACC004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5241FFF91FEEABA100ACC004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5241FFFB1FEEABA100ACC004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UF5W33258N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WCDylib/WCDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libWCDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"WCDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		5241FFFC1FEEABA100ACC004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = UF5W33258N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WCDylib/WCDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libWCDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"WCDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5241FFFE1FEEABA100ACC004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UF5W33258N;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = WC/Info.plist;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.xin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5241FFFF1FEEABA100ACC004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UF5W33258N;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = WC/Info.plist;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.xin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5241FFB81FEEABA000ACC004 /* Build configuration list for PBXProject "WC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5241FFF81FEEABA100ACC004 /* Debug */,
+				5241FFF91FEEABA100ACC004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5241FFFA1FEEABA100ACC004 /* Build configuration list for PBXNativeTarget "WCDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5241FFFB1FEEABA100ACC004 /* Debug */,
+				5241FFFC1FEEABA100ACC004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5241FFFD1FEEABA100ACC004 /* Build configuration list for PBXNativeTarget "WC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5241FFFE1FEEABA100ACC004 /* Debug */,
+				5241FFFF1FEEABA100ACC004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5241FFB51FEEABA000ACC004 /* Project object */;
+}
