@@ -1,4 +1,4 @@
-#line 1 "/Users/xiaobin/Documents/work/myself/Phoenix2/Phoenix2Dylib/Phoenix2Dylib.xm"
+#line 1 "/Users/xiaobin/Documents/work/myself/WC/Phoenix2/Phoenix2Dylib/Phoenix2Dylib.xm"
 
 
 #include <string>
@@ -69,22 +69,6 @@ struct GameResults {
 @end
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #include <substrate.h>
 #if defined(__clang__)
 #if __has_feature(objc_arc)
@@ -105,10 +89,26 @@ struct GameResults {
 #define _LOGOS_RETURN_RETAINED
 #endif
 
-@class Phoenix2Score; @class Phoenix2GameViewController; 
-static void (*_logos_orig$_ungrouped$Phoenix2GameViewController$createNewScoreAndStartNewGameOfUser$withShip$)(_LOGOS_SELF_TYPE_NORMAL Phoenix2GameViewController* _LOGOS_SELF_CONST, SEL, id, Phoenix2Ship *); static void _logos_method$_ungrouped$Phoenix2GameViewController$createNewScoreAndStartNewGameOfUser$withShip$(_LOGOS_SELF_TYPE_NORMAL Phoenix2GameViewController* _LOGOS_SELF_CONST, SEL, id, Phoenix2Ship *); static Phoenix2Score* (*_logos_orig$_ungrouped$Phoenix2Score$initScoreOfUser$forStage$usingShip$)(_LOGOS_SELF_TYPE_INIT Phoenix2Score*, SEL, id, id, Phoenix2Ship *) _LOGOS_RETURN_RETAINED; static Phoenix2Score* _logos_method$_ungrouped$Phoenix2Score$initScoreOfUser$forStage$usingShip$(_LOGOS_SELF_TYPE_INIT Phoenix2Score*, SEL, id, id, Phoenix2Ship *) _LOGOS_RETURN_RETAINED; 
+@class Phoenix2Score; @class Phoenix2Ship; @class Phoenix2GameViewController; 
+static Phoenix2Ship* (*_logos_orig$_ungrouped$Phoenix2Ship$initWithIdentifier$integerID$unlockCost$weaponUpgrades$primaryUpgrades$secondaryUpgrades$rangeIndicator$rarity$damageType$zenMode$previewEnemy$)(_LOGOS_SELF_TYPE_INIT Phoenix2Ship*, SEL, id, long long, long long, id, id, id, id, int, int, int, int) _LOGOS_RETURN_RETAINED; static Phoenix2Ship* _logos_method$_ungrouped$Phoenix2Ship$initWithIdentifier$integerID$unlockCost$weaponUpgrades$primaryUpgrades$secondaryUpgrades$rangeIndicator$rarity$damageType$zenMode$previewEnemy$(_LOGOS_SELF_TYPE_INIT Phoenix2Ship*, SEL, id, long long, long long, id, id, id, id, int, int, int, int) _LOGOS_RETURN_RETAINED; static void (*_logos_orig$_ungrouped$Phoenix2GameViewController$createNewScoreAndStartNewGameOfUser$withShip$)(_LOGOS_SELF_TYPE_NORMAL Phoenix2GameViewController* _LOGOS_SELF_CONST, SEL, id, Phoenix2Ship *); static void _logos_method$_ungrouped$Phoenix2GameViewController$createNewScoreAndStartNewGameOfUser$withShip$(_LOGOS_SELF_TYPE_NORMAL Phoenix2GameViewController* _LOGOS_SELF_CONST, SEL, id, Phoenix2Ship *); static Phoenix2Score* (*_logos_orig$_ungrouped$Phoenix2Score$initScoreOfUser$forStage$usingShip$)(_LOGOS_SELF_TYPE_INIT Phoenix2Score*, SEL, id, id, Phoenix2Ship *) _LOGOS_RETURN_RETAINED; static Phoenix2Score* _logos_method$_ungrouped$Phoenix2Score$initScoreOfUser$forStage$usingShip$(_LOGOS_SELF_TYPE_INIT Phoenix2Score*, SEL, id, id, Phoenix2Ship *) _LOGOS_RETURN_RETAINED; 
 
-#line 86 "/Users/xiaobin/Documents/work/myself/Phoenix2/Phoenix2Dylib/Phoenix2Dylib.xm"
+#line 70 "/Users/xiaobin/Documents/work/myself/WC/Phoenix2/Phoenix2Dylib/Phoenix2Dylib.xm"
+
+
+
+
+
+
+
+
+
+static Phoenix2Ship* _logos_method$_ungrouped$Phoenix2Ship$initWithIdentifier$integerID$unlockCost$weaponUpgrades$primaryUpgrades$secondaryUpgrades$rangeIndicator$rarity$damageType$zenMode$previewEnemy$(_LOGOS_SELF_TYPE_INIT Phoenix2Ship* __unused self, SEL __unused _cmd, id arg1, long long arg2, long long arg3, id arg4, id arg5, id arg6, id arg7, int arg8, int arg9, int arg10, int arg11) _LOGOS_RETURN_RETAINED {
+    HBLogDebug(@"-[<Phoenix2Ship: %p> initWithIdentifier:%@ integerID:%lld unlockCost:%lld weaponUpgrades:%@ primaryUpgrades:%@ secondaryUpgrades:%@ rangeIndicator:%@ rarity:%d damageType:%d zenMode:%d previewEnemy:%d]", self, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
+    return _logos_orig$_ungrouped$Phoenix2Ship$initWithIdentifier$integerID$unlockCost$weaponUpgrades$primaryUpgrades$secondaryUpgrades$rangeIndicator$rarity$damageType$zenMode$previewEnemy$(self, _cmd, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
+}
+
+
+
 
 
 
@@ -201,15 +201,18 @@ static Phoenix2Score* _logos_method$_ungrouped$Phoenix2Score$initScoreOfUser$for
                             enemiesDestroyed:arg3.enemiesDestroyed];
     NSLog(@"%@(%@) weaponLevel=%d,primaryLevel=%d,secondaryLevel=%d", [ship localizedName], [ship identifier], ship.weaponLevel, ship.primaryLevel, ship.secondaryLevel);
     id r = _logos_orig$_ungrouped$Phoenix2Score$initScoreOfUser$forStage$usingShip$(self, _cmd, arg1, arg2, ship);
-    char* pShip = (char*)(__bridge void*)arg3;
-    *(int*)((char*)pShip+0x38) = 6;
-    *(int*)((char*)pShip+0x3c) = 6;
-    *(int*)((char*)pShip+0x40) = 6;
+    MSHookIvar<int>(arg3, "damage_type_") = 1;
+    MSHookIvar<int>(arg3, "weapon_level_") = 6;
+    MSHookIvar<int>(arg3, "primary_level_") = 6;
+    MSHookIvar<int>(arg3, "secondary_level_") = 6;
+
+
+
     NSLog(@"HACK %@(%@) weaponLevel=%d,primaryLevel=%d,secondaryLevel=%d", [arg3 localizedName], [arg3 identifier], arg3.weaponLevel, arg3.primaryLevel, arg3.secondaryLevel);
     return r;
 }
 
 
 static __attribute__((constructor)) void _logosLocalInit() {
-{Class _logos_class$_ungrouped$Phoenix2GameViewController = objc_getClass("Phoenix2GameViewController"); MSHookMessageEx(_logos_class$_ungrouped$Phoenix2GameViewController, @selector(createNewScoreAndStartNewGameOfUser:withShip:), (IMP)&_logos_method$_ungrouped$Phoenix2GameViewController$createNewScoreAndStartNewGameOfUser$withShip$, (IMP*)&_logos_orig$_ungrouped$Phoenix2GameViewController$createNewScoreAndStartNewGameOfUser$withShip$);Class _logos_class$_ungrouped$Phoenix2Score = objc_getClass("Phoenix2Score"); MSHookMessageEx(_logos_class$_ungrouped$Phoenix2Score, @selector(initScoreOfUser:forStage:usingShip:), (IMP)&_logos_method$_ungrouped$Phoenix2Score$initScoreOfUser$forStage$usingShip$, (IMP*)&_logos_orig$_ungrouped$Phoenix2Score$initScoreOfUser$forStage$usingShip$);} }
-#line 187 "/Users/xiaobin/Documents/work/myself/Phoenix2/Phoenix2Dylib/Phoenix2Dylib.xm"
+{Class _logos_class$_ungrouped$Phoenix2Ship = objc_getClass("Phoenix2Ship"); MSHookMessageEx(_logos_class$_ungrouped$Phoenix2Ship, @selector(initWithIdentifier:integerID:unlockCost:weaponUpgrades:primaryUpgrades:secondaryUpgrades:rangeIndicator:rarity:damageType:zenMode:previewEnemy:), (IMP)&_logos_method$_ungrouped$Phoenix2Ship$initWithIdentifier$integerID$unlockCost$weaponUpgrades$primaryUpgrades$secondaryUpgrades$rangeIndicator$rarity$damageType$zenMode$previewEnemy$, (IMP*)&_logos_orig$_ungrouped$Phoenix2Ship$initWithIdentifier$integerID$unlockCost$weaponUpgrades$primaryUpgrades$secondaryUpgrades$rangeIndicator$rarity$damageType$zenMode$previewEnemy$);Class _logos_class$_ungrouped$Phoenix2GameViewController = objc_getClass("Phoenix2GameViewController"); MSHookMessageEx(_logos_class$_ungrouped$Phoenix2GameViewController, @selector(createNewScoreAndStartNewGameOfUser:withShip:), (IMP)&_logos_method$_ungrouped$Phoenix2GameViewController$createNewScoreAndStartNewGameOfUser$withShip$, (IMP*)&_logos_orig$_ungrouped$Phoenix2GameViewController$createNewScoreAndStartNewGameOfUser$withShip$);Class _logos_class$_ungrouped$Phoenix2Score = objc_getClass("Phoenix2Score"); MSHookMessageEx(_logos_class$_ungrouped$Phoenix2Score, @selector(initScoreOfUser:forStage:usingShip:), (IMP)&_logos_method$_ungrouped$Phoenix2Score$initScoreOfUser$forStage$usingShip$, (IMP*)&_logos_orig$_ungrouped$Phoenix2Score$initScoreOfUser$forStage$usingShip$);} }
+#line 190 "/Users/xiaobin/Documents/work/myself/WC/Phoenix2/Phoenix2Dylib/Phoenix2Dylib.xm"

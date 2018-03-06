@@ -67,7 +67,7 @@ struct GameResults {
 - (id)copyWithState:(int)arg1 weaponLevel:(int)arg2 primaryLevel:(int)arg3 secondaryLevel:(int)arg4 timesPlayed:(int)arg5 enemiesDestroyed:(int)arg6;
 @end
 
-//%hook Phoenix2Ship
+%hook Phoenix2Ship
 //
 //- (id)copyWithState:(int)arg1 weaponLevel:(int)arg2 primaryLevel:(int)arg3 secondaryLevel:(int)arg4 timesPlayed:(int)arg5 enemiesDestroyed:(int)arg6
 //{
@@ -75,13 +75,13 @@ struct GameResults {
 //    return %orig;
 //}
 //
-//- (id)initWithIdentifier:(id)arg1 integerID:(long long)arg2 unlockCost:(long long)arg3 weaponUpgrades:(id)arg4 primaryUpgrades:(id)arg5 secondaryUpgrades:(id)arg6 rangeIndicator:(id)arg7 rarity:(int)arg8 damageType:(int)arg9 zenMode:(int)arg10 previewEnemy:(int)arg11
-//{
-//    %log;
-//    return %orig;
-//}
+- (id)initWithIdentifier:(id)arg1 integerID:(long long)arg2 unlockCost:(long long)arg3 weaponUpgrades:(id)arg4 primaryUpgrades:(id)arg5 secondaryUpgrades:(id)arg6 rangeIndicator:(id)arg7 rarity:(int)arg8 damageType:(int)arg9 zenMode:(int)arg10 previewEnemy:(int)arg11
+{
+    %log;
+    return %orig;
+}
 //
-//%end
+%end
 
 %hook Phoenix2GameViewController
 
@@ -175,10 +175,13 @@ struct GameResults {
                             enemiesDestroyed:arg3.enemiesDestroyed];
     NSLog(@"%@(%@) weaponLevel=%d,primaryLevel=%d,secondaryLevel=%d", [ship localizedName], [ship identifier], ship.weaponLevel, ship.primaryLevel, ship.secondaryLevel);
     id r = %orig(arg1, arg2, ship);
-    char* pShip = (char*)(__bridge void*)arg3;
-    *(int*)((char*)pShip+0x38) = 6;
-    *(int*)((char*)pShip+0x3c) = 6;
-    *(int*)((char*)pShip+0x40) = 6;
+    MSHookIvar<int>(arg3, "damage_type_") = 1;//0无护甲暴击、1装甲完全伤害、2高护盾有效
+    MSHookIvar<int>(arg3, "weapon_level_") = 6;
+    MSHookIvar<int>(arg3, "primary_level_") = 6;
+    MSHookIvar<int>(arg3, "secondary_level_") = 6;
+//    MSHookIvar<NSString*>(arg3, "range_indicator_") =  @"range.indicator.blade.storm.level1";
+//    MSHookIvar<NSString*>(arg3, "identifier_") =  @"player_ship_68";
+//    MSHookIvar<long long>(arg3, "integer_id_") = 68;
     NSLog(@"HACK %@(%@) weaponLevel=%d,primaryLevel=%d,secondaryLevel=%d", [arg3 localizedName], [arg3 identifier], arg3.weaponLevel, arg3.primaryLevel, arg3.secondaryLevel);
     return r;
 }
